@@ -1,0 +1,51 @@
+{
+  "name": "Noto Serif",
+  "designer": "Google",
+  "license": "Apache2",
+  "visibility": "Sandbox",
+  "category": "Serif",
+  "size": 208530,
+  "fonts": [
+    {
+      "name": "Noto Serif",
+      "style": "normal",
+      "weight": 700,
+      "filename": "NotoSerif-Bold.ttf",
+      "postScriptName": "NotoSerif-Bold",
+      "fullName": "Noto Serif Bold",
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    },
+    {
+      "name": "Noto Serif",
+      "style": "italic",
+      "weight": 700,
+      "filename": "NotoSerif-BoldItalic.ttf",
+      "postScriptName": "NotoSerif-BoldItalic",
+      "fullName": "Noto Serif Bold Italic",
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    },
+    {
+      "name": "Noto Serif",
+      "style": "italic",
+      "weight": 400,
+      "filename": "NotoSerif-Italic.ttf",
+      "postScriptName": "NotoSerif-Italic",
+      "fullName": "Noto Serif Italic",
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    },
+    {
+      "name": "Noto Serif",
+      "style": "normal",
+      "weight": 400,
+      "filename": "NotoSerif-Regular.ttf",
+      "postScriptName": "NotoSerif",
+      "fullName": "Noto Serif",
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    }
+  ],
+  "subsets": [
+    "latin",
+    "menu"
+  ],
+  "dateAdded": "2013-02-27"
+}

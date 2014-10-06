@@ -1,0 +1,676 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/notoserif/METADATA.json /home/travis/build/fontdirectory/notoserif/builds/build
+$ cp -a /home/travis/build/fontdirectory/notoserif/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/notoserif/builds/build
+$ cp -a NotoSerif-Regular.ttf.ttx NotoSerif-Italic.ttf.ttx NotoSerif-BoldItalic.ttf.ttx NotoSerif-Bold.ttf.ttx NotoSerif-Regular.ttf._p_r_e_p.ttx NotoSerif-Regular.ttf._p_o_s_t.ttx NotoSerif-Regular.ttf._n_a_m_e.ttx NotoSerif-Regular.ttf._m_a_x_p.ttx NotoSerif-Regular.ttf._l_o_c_a.ttx NotoSerif-Regular.ttf._h_m_t_x.ttx NotoSerif-Regular.ttf._h_h_e_a.ttx NotoSerif-Regular.ttf._h_e_a_d.ttx NotoSerif-Regular.ttf._g_l_y_f.ttx NotoSerif-Regular.ttf._g_a_s_p.ttx NotoSerif-Regular.ttf._f_p_g_m.ttx NotoSerif-Regular.ttf._c_v_t.ttx NotoSerif-Regular.ttf._c_m_a_p.ttx NotoSerif-Regular.ttf.O_S_2f_2.ttx NotoSerif-Regular.ttf.GlyphOrder.ttx NotoSerif-Regular.ttf.G_S_U_B_.ttx NotoSerif-Regular.ttf.G_P_O_S_.ttx NotoSerif-Regular.ttf.G_D_E_F_.ttx NotoSerif-Italic.ttf._p_r_e_p.ttx NotoSerif-Italic.ttf._p_o_s_t.ttx NotoSerif-Italic.ttf._n_a_m_e.ttx NotoSerif-Italic.ttf._m_a_x_p.ttx NotoSerif-Italic.ttf._l_o_c_a.ttx NotoSerif-Italic.ttf._h_m_t_x.ttx NotoSerif-Italic.ttf._h_h_e_a.ttx NotoSerif-Italic.ttf._h_e_a_d.ttx NotoSerif-Italic.ttf._g_l_y_f.ttx NotoSerif-Italic.ttf._g_a_s_p.ttx NotoSerif-Italic.ttf._f_p_g_m.ttx NotoSerif-Italic.ttf._c_v_t.ttx NotoSerif-Italic.ttf._c_m_a_p.ttx NotoSerif-Italic.ttf.O_S_2f_2.ttx NotoSerif-Italic.ttf.GlyphOrder.ttx NotoSerif-Italic.ttf.G_S_U_B_.ttx NotoSerif-Italic.ttf.G_P_O_S_.ttx NotoSerif-Italic.ttf.G_D_E_F_.ttx NotoSerif-BoldItalic.ttf._p_r_e_p.ttx NotoSerif-BoldItalic.ttf._p_o_s_t.ttx NotoSerif-BoldItalic.ttf._n_a_m_e.ttx NotoSerif-BoldItalic.ttf._m_a_x_p.ttx NotoSerif-BoldItalic.ttf._l_o_c_a.ttx NotoSerif-BoldItalic.ttf._h_m_t_x.ttx NotoSerif-BoldItalic.ttf._h_h_e_a.ttx NotoSerif-BoldItalic.ttf._h_e_a_d.ttx NotoSerif-BoldItalic.ttf._g_l_y_f.ttx NotoSerif-BoldItalic.ttf._g_a_s_p.ttx NotoSerif-BoldItalic.ttf._f_p_g_m.ttx NotoSerif-BoldItalic.ttf._c_v_t.ttx NotoSerif-BoldItalic.ttf._c_m_a_p.ttx NotoSerif-BoldItalic.ttf.O_S_2f_2.ttx NotoSerif-BoldItalic.ttf.GlyphOrder.ttx NotoSerif-BoldItalic.ttf.G_S_U_B_.ttx NotoSerif-BoldItalic.ttf.G_P_O_S_.ttx NotoSerif-BoldItalic.ttf.G_D_E_F_.ttx NotoSerif-Bold.ttf._p_r_e_p.ttx NotoSerif-Bold.ttf._p_o_s_t.ttx NotoSerif-Bold.ttf._n_a_m_e.ttx NotoSerif-Bold.ttf._m_a_x_p.ttx NotoSerif-Bold.ttf._l_o_c_a.ttx NotoSerif-Bold.ttf._h_m_t_x.ttx NotoSerif-Bold.ttf._h_h_e_a.ttx NotoSerif-Bold.ttf._h_e_a_d.ttx NotoSerif-Bold.ttf._g_l_y_f.ttx NotoSerif-Bold.ttf._g_a_s_p.ttx NotoSerif-Bold.ttf._f_p_g_m.ttx NotoSerif-Bold.ttf._c_v_t.ttx NotoSerif-Bold.ttf._c_m_a_p.ttx NotoSerif-Bold.ttf.O_S_2f_2.ttx NotoSerif-Bold.ttf.GlyphOrder.ttx NotoSerif-Bold.ttf.G_S_U_B_.ttx NotoSerif-Bold.ttf.G_P_O_S_.ttx NotoSerif-Bold.ttf.G_D_E_F_.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ fontbakery-check.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Bold.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-BoldItalic.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Italic.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Regular.ttf.ttx > fontaine.txt
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+end of pyfontaine process
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): FAIL
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ fontbakery-check.py upstream-ttx NotoSerif-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Bold.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): FAIL
+$ fontbakery-check.py upstream-ttx NotoSerif-BoldItalic.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-BoldItalic.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-BoldItalic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): FAIL
+$ fontbakery-check.py upstream-ttx NotoSerif-Italic.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Italic.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Italic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): FAIL
+$ fontbakery-check.py upstream-ttx NotoSerif-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Regular.ttf.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): FAIL
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/notoserif/builds/build /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Regular.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Italic.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-BoldItalic.ttx /home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Bold.ttx
+Compiling "/home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Regular.ttx" to "/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Compiling "/home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Italic.ttx" to "/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Compiling "/home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-BoldItalic.ttx" to "/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Compiling "/home/travis/build/fontdirectory/notoserif/builds/build/sources/NotoSerif-Bold.ttx" to "/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+### Test NotoSerif-Regular.ttf
+$ fontbakery-check.py result NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): FAIL
+$ fontbakery-fix-vertical-metrics.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ fontbakery-fix-vertical-metrics.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+Parameter              NotoSerif-Regular.ttf    NotoSerif-Bold.ttf    NotoSerif-BoldItalic.ttf    NotoSerif-Italic.ttf    
+ymax                   2146                     2181                  2167                        2146                    
+hhea.ascent            2181                     2181                  2181                        2181                    
+OS/2.sTypoAscender     2181                     2181                  2181                        2181                    
+OS/2.usWinAscent       2181                     2181                  2181                        2181                    
+ymin                   -512                     -571                  -571                        -527                    
+hhea.descent           -571                     -571                  -571                        -571                    
+OS/2.sTypoDescender    -571                     -571                  -571                        -571                    
+OS/2.usWinDescent      571                      571                   571                         571                     
+hhea.lineGap           0                        0                     0                           0                       
+OS/2.sTypoLineGap      0                        0                     0                           0                       
+hhea total             2752                     2752                  2752                        2752                    
+typo total             2752                     2752                  2752                        2752                    
+win total              2752                     2752                  2752                        2752                    
+UPM:Heights            2048:2658                2048:2752             2048:2738                   2048:2673               
+UPM:Heights %          129 %                    134 %                 133 %                       130 %                   
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ fontbakery-fix-dsig.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): FAIL
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF NotoSerif-Regular.ttf
+$ ls -l 'NotoSerif-Regular.ttf'* # look at the size savings of that subset process
+NotoSerif-Regular.ttf.opt: 347116 bytes
+NotoSerif-Regular.ttf: 347200 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf.opt /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+### Autohint TTFs (ttfautohint) NotoSerif-Regular.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf '/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf: 347116 bytes
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.autohint.ttf: 348228 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.autohint.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+### Subset TTFs (pyftsubset) NotoSerif-Regular.ttf
+$ pyftsubset NotoSerif-Regular.latin
+$ pyftsubset NotoSerif-Regular.menu
+strippedname:/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Regular.ttf
+### Test NotoSerif-Italic.ttf
+$ fontbakery-check.py result NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ fontbakery-fix-dsig.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): FAIL
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF NotoSerif-Italic.ttf
+$ ls -l 'NotoSerif-Italic.ttf'* # look at the size savings of that subset process
+NotoSerif-Italic.ttf.opt: 319932 bytes
+NotoSerif-Italic.ttf: 320016 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf.opt /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+### Autohint TTFs (ttfautohint) NotoSerif-Italic.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf '/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf: 319932 bytes
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.autohint.ttf: 330828 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.autohint.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+### Subset TTFs (pyftsubset) NotoSerif-Italic.ttf
+$ pyftsubset NotoSerif-Italic.latin
+$ pyftsubset NotoSerif-Italic.menu
+strippedname:/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Italic.ttf
+### Test NotoSerif-BoldItalic.ttf
+$ fontbakery-check.py result NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ fontbakery-fix-dsig.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): FAIL
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF NotoSerif-BoldItalic.ttf
+$ ls -l 'NotoSerif-BoldItalic.ttf'* # look at the size savings of that subset process
+NotoSerif-BoldItalic.ttf.opt: 330372 bytes
+NotoSerif-BoldItalic.ttf: 330456 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf.opt /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+### Autohint TTFs (ttfautohint) NotoSerif-BoldItalic.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf '/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf: 330372 bytes
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.autohint.ttf: 344916 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.autohint.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+### Subset TTFs (pyftsubset) NotoSerif-BoldItalic.ttf
+$ pyftsubset NotoSerif-BoldItalic.latin
+$ pyftsubset NotoSerif-BoldItalic.menu
+strippedname:/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-BoldItalic.ttf
+### Test NotoSerif-Bold.ttf
+$ fontbakery-check.py result NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ fontbakery-fix-gasp.py --set=15 /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ fontbakery-fix-opentype-names.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ fontbakery-fix-dsig.py /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): FAIL
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ fontbakery-fix-fstype.py --autofix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.fix /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_menu_file_exists(): FAIL
+### Optimize TTF NotoSerif-Bold.ttf
+$ ls -l 'NotoSerif-Bold.ttf'* # look at the size savings of that subset process
+NotoSerif-Bold.ttf.opt: 367384 bytes
+NotoSerif-Bold.ttf: 367468 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf.opt /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+### Autohint TTFs (ttfautohint) NotoSerif-Bold.ttf
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf '/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.autohint.ttf'
+
+$ ls -l /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf: 367384 bytes
+/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.autohint.ttf: 336188 bytes
+$ mv /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.autohint.ttf /home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+### Subset TTFs (pyftsubset) NotoSerif-Bold.ttf
+$ pyftsubset NotoSerif-Bold.latin
+$ pyftsubset NotoSerif-Bold.menu
+strippedname:/home/travis/build/fontdirectory/notoserif/builds/build/NotoSerif-Bold.ttf
+### (5 of 6) Generate METADATA.json (fontbakery-build-metadata.py)
+$ fontbakery-build-metadata.py /home/travis/build/fontdirectory/notoserif/builds/build
+{} exists
+Designer's name from font is: Monotype Design team
+Original size: 348228\nGzip size: 174876
+Family Name: Noto Serif
+PS Name: NotoSerif-Bold
+Full Name: Noto Serif Bold
+Style: normal
+Weight: 700
+Filename: NotoSerif-Bold.ttf
+Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+Family Name: Noto Serif
+PS Name: NotoSerif-BoldItalic
+Full Name: Noto Serif Bold Italic
+Style: italic
+Weight: 700
+Filename: NotoSerif-BoldItalic.ttf
+Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+Family Name: Noto Serif
+PS Name: NotoSerif-Italic
+Full Name: Noto Serif Italic
+Style: italic
+Weight: 400
+Filename: NotoSerif-Italic.ttf
+Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+Family Name: Noto Serif
+PS Name: NotoSerif
+Full Name: Noto Serif
+Style: normal
+Weight: 400
+Filename: NotoSerif-Regular.ttf
+Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+### (6 of 6) Run tests for METADATA.json
+$ fontbakery-check.py metadata METADATA.json
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_cyrillic(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_cyrillic_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_greek(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_greek_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin(): OK
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin_ext(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_menu(): OK
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_vietnamese(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist(): OK
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/tests/metadata_test.py:141: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  self.assertTrue(designer in designers,
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestFontOnDiskFamilyEqualToMetadataJSON.test_font_on_disk_family_equal_in_metadata_json(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.TestPostScriptNameInMetadataEqualFontOnDisk.test_postscriptname_in_metadata_equal_to_font_on_disk(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postscriptname(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists(): FAIL
+bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement(): OK
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names(): OK
+bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable(): OK
+bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields(): OK
+bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family(): OK
+bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case(): OK
+bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement(): OK
+bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font(): OK
+bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles(): OK
+bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames(): OK
+{
+  "name": "Noto Serif", 
+  "designer": "Google", 
+  "license": "Apache2", 
+  "visibility": "Sandbox", 
+  "category": "Serif", 
+  "size": 208530, 
+  "fonts": [
+    {
+      "name": "Noto Serif", 
+      "postScriptName": "NotoSerif-Bold", 
+      "fullName": "Noto Serif Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "NotoSerif-Bold.ttf", 
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    }, 
+    {
+      "name": "Noto Serif", 
+      "postScriptName": "NotoSerif-BoldItalic", 
+      "fullName": "Noto Serif Bold Italic", 
+      "style": "italic", 
+      "weight": 700, 
+      "filename": "NotoSerif-BoldItalic.ttf", 
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    }, 
+    {
+      "name": "Noto Serif", 
+      "postScriptName": "NotoSerif-Italic", 
+      "fullName": "Noto Serif Italic", 
+      "style": "italic", 
+      "weight": 400, 
+      "filename": "NotoSerif-Italic.ttf", 
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    }, 
+    {
+      "name": "Noto Serif", 
+      "postScriptName": "NotoSerif", 
+      "fullName": "Noto Serif", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "NotoSerif-Regular.ttf", 
+      "copyright": "Copyright 2012 Google Inc. All Rights Reserved."
+    }
+  ], 
+  "subsets": [
+    "latin", 
+    "menu"
+  ], 
+  "dateAdded": "2013-02-27"
+}

@@ -1,0 +1,228 @@
+Fonts
+  All fonts have the same character sets.
+  Font:
+    Common name: Noto Serif
+    Sub family: Bold
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+    License: Licensed under the Apache License, Version 2.0
+    License url: http://www.apache.org/licenses/LICENSE-2.0
+    Version: Version 1.02
+    Vendor: Monotype Imaging Inc.
+    Vendor url: http://code.google.com/p/noto/
+    Designer: Monotype Design team
+    Designer url: http://www.monotypeimaging.com/ProductsServices/TypeDesignerShowcase
+    Glyph count: 2414
+    Character count: 2192
+    Orthographies:
+        Orthography:
+          Common name: Subset greek-ext
+          Support level: partial
+          Percent coverage: 91
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+        Orthography:
+          Common name: Subset cyrillic-ext
+          Support level: fragmentary
+          Percent coverage: 59
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset cyrillic
+          Support level: full
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek
+          Support level: partial
+          Percent coverage: 88
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 68
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: full
+  Font:
+    Common name: Noto Serif
+    Sub family: Bold Italic
+    Style: italic
+    Weight: bold
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+    License: Licensed under the Apache License, Version 2.0
+    License url: http://www.apache.org/licenses/LICENSE-2.0
+    Version: Version 1.02
+    Vendor: Monotype Imaging Inc.
+    Vendor url: http://code.google.com/p/noto/
+    Designer: Monotype Design team
+    Designer url: http://www.monotypeimaging.com/ProductsServices/TypeDesignerShowcase
+    Glyph count: 2414
+    Character count: 2192
+    Orthographies:
+        Orthography:
+          Common name: Subset greek-ext
+          Support level: partial
+          Percent coverage: 91
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+        Orthography:
+          Common name: Subset cyrillic-ext
+          Support level: fragmentary
+          Percent coverage: 59
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset cyrillic
+          Support level: full
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek
+          Support level: partial
+          Percent coverage: 88
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 68
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: full
+  Font:
+    Common name: Noto Serif
+    Sub family: Italic
+    Style: italic
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+    License: Licensed under the Apache License, Version 2.0
+    License url: http://www.apache.org/licenses/LICENSE-2.0
+    Version: Version 1.02
+    Vendor: Monotype Imaging Inc.
+    Vendor url: http://code.google.com/p/noto/
+    Designer: Monotype Design team
+    Designer url: http://www.monotypeimaging.com/ProductsServices/TypeDesignerShowcase
+    Glyph count: 2414
+    Character count: 2192
+    Orthographies:
+        Orthography:
+          Common name: Subset greek-ext
+          Support level: partial
+          Percent coverage: 91
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+        Orthography:
+          Common name: Subset cyrillic-ext
+          Support level: fragmentary
+          Percent coverage: 59
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset cyrillic
+          Support level: full
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek
+          Support level: partial
+          Percent coverage: 88
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 68
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: full
+  Font:
+    Common name: Noto Serif
+    Sub family: Regular
+    Weight: normal
+    Fixed width: no
+    Fixed sizes: no
+    Copyright: Copyright 2012 Google Inc. All Rights Reserved.
+    License: Licensed under the Apache License, Version 2.0
+    License url: http://www.apache.org/licenses/LICENSE-2.0
+    Version: Version 1.02
+    Vendor: Monotype Imaging Inc.
+    Vendor url: http://code.google.com/p/noto/
+    Designer: Monotype Design team
+    Designer url: http://www.monotypeimaging.com/ProductsServices/TypeDesignerShowcase
+    Glyph count: 2414
+    Character count: 2192
+    Orthographies:
+        Orthography:
+          Common name: Subset greek-ext
+          Support level: partial
+          Percent coverage: 91
+        Orthography:
+          Common name: Subset vietnamese
+          Support level: full
+        Orthography:
+          Common name: Subset cyrillic-ext
+          Support level: fragmentary
+          Percent coverage: 59
+        Orthography:
+          Common name: Subset latin
+          Support level: partial
+          Percent coverage: 98
+        Orthography:
+          Common name: Subset cyrillic
+          Support level: full
+        Orthography:
+          Common name: Subset devanagari
+          Support level: fragmentary
+          Percent coverage: 3
+        Orthography:
+          Common name: Subset cyrillic-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek
+          Support level: partial
+          Percent coverage: 88
+        Orthography:
+          Common name: Subset latin-ext
+          Support level: fragmentary
+          Percent coverage: 68
+        Orthography:
+          Common name: Subset vietnamese-menu
+          Support level: full
+        Orthography:
+          Common name: Subset greek-menu
+          Support level: full
